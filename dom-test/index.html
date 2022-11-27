@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM test</title>
+</head>
+<body>
+   <header><h1>Filterable Gallery</h1></header>
+   <main>
+    <h2>ADD PRODUCT</h2>
+    <form>
+        Enter Image URL <input type="url" id="url" required>
+        Select Type
+        <Select class="products">
+            <option class="headphone">Headphone</option>
+            <option class="mobile">Mobile</option>
+            <option class="laptop">Laptop</option>
+        </Select>
+       <input type="submit" value="ADD" class="add_btn">
+    </form>
+    <div class="button">
+        <button class="all btn">ALL</button>
+        <button class="headph btn">HEADPHONE</button>
+        <button class="mobile btn">MOBILE</button>
+        <button class="laptop btn">LAPTOP</button>
+    </div>
+    <div class="container"></div>
+        
+   </main>
+</body>
+<script src="app.js"></script>
+</html>
