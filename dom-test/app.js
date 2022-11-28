@@ -1,5 +1,5 @@
 
-const products=document.querySelector("products");
+const products=document.querySelector(".products");
 const container=document.querySelector(".container");
 
 
