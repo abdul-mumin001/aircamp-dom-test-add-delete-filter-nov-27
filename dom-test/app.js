@@ -4,7 +4,7 @@ const container=document.querySelector(".container");
 
 
 document.querySelector("form").addEventListener("submit", appendProduct);
-container.addEventListener("click", deleteDiv);
+container.addEventListener("click", delete_button);
 
 function appendProduct(event){
     event.preventDefault();
@@ -26,11 +26,11 @@ function appendProduct(event){
     document.querySelector("#url").value="";
 }
 }
-function deleteDiv(e){
+function delete_button(e){
     console.log(e.target);
     if(!(e.target.classList.contains("delete_btn")))
     return
-    const delBtn=e.target;
-    delBtn.parentElement.remove();
+    const deleteBtn=e.target;
+    deleteBtn.parentElement.remove();
 
 }
